@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.AffichermecaController">
+   <children>
+      <TableView fx:id="listmeca" layoutX="51.0" layoutY="445.0" prefHeight="108.0" prefWidth="651.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="col_prenom" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="col_cin" prefWidth="75.0" text="cin" />
+            <TableColumn fx:id="col_adresse" prefWidth="75.0" text="adresse_mail" />
+            <TableColumn fx:id="col_numtel" prefWidth="75.0" text="num_tel" />
+            <TableColumn fx:id="col_salaire" prefWidth="75.0" text="salaire" />
+            <TableColumn fx:id="col_dispo" prefWidth="75.0" text="disponibilite" />
+            <TableColumn fx:id="col_lieu" prefWidth="75.0" text="lieu_garage" />
+            <TableColumn fx:id="col_facture" prefWidth="75.0" text="facture_rep" />
+        </columns>
+      </TableView>
+      <Button fx:id="tfajout" layoutX="14.0" layoutY="414.0" mnemonicParsing="false" onAction="#ajouter" text="ajouter_mecanicien" />
+      <Button fx:id="tfmodif" layoutX="192.0" layoutY="414.0" mnemonicParsing="false" onAction="#modif_meca" text="Modifier_mecanicien" />
+      <Button fx:id="tfdelete" layoutX="395.0" layoutY="414.0" mnemonicParsing="false" onAction="#supp_meca" text="Supprimer_mecanicien" />
+      <Button fx:id="tfactual" layoutX="605.0" layoutY="414.0" mnemonicParsing="false" onAction="#actualiserr" text="Actualiser" />
+      <TextField fx:id="tfnom" layoutX="166.0" layoutY="77.0" prefHeight="25.0" prefWidth="206.0" promptText="Nom_mecanicien" />
+      <TextField fx:id="tfnom1" layoutX="467.0" layoutY="77.0" prefHeight="25.0" prefWidth="206.0" promptText="Prenom_mecanicien" />
+      <TextField fx:id="tfnom2" layoutX="166.0" layoutY="143.0" prefHeight="25.0" prefWidth="206.0" promptText="cin" />
+      <TextField fx:id="tfnom3" layoutX="166.0" layoutY="208.0" prefHeight="25.0" prefWidth="206.0" promptText="Num_tel" />
+      <TextField fx:id="tfnom4" layoutX="467.0" layoutY="208.0" prefHeight="25.0" prefWidth="206.0" promptText="Salaire" />
+      <TextField fx:id="tfnom5" layoutX="467.0" layoutY="143.0" prefHeight="25.0" prefWidth="206.0" promptText="Adresse_mail" />
+      <TextField fx:id="tfnom31" layoutX="181.0" layoutY="272.0" prefHeight="25.0" prefWidth="206.0" promptText="Lieu_garage" />
+      <Button fx:id="btnimport1" layoutX="507.0" layoutY="373.0" mnemonicParsing="false" onAction="#import1" text="Facture_reparation" />
+      <Label layoutX="119.0" layoutY="81.0" text="Nom" />
+      <Label layoutX="119.0" layoutY="147.0" text="CIN" />
+      <Label layoutX="419.0" layoutY="81.0" text="Prenom" />
+      <Label layoutX="392.0" layoutY="147.0" text="Adresse_mail" />
+      <Label layoutX="413.0" layoutY="212.0" text="Salaire" />
+      <Label layoutX="88.0" layoutY="212.0" text="Numero_tel" />
+      <Label layoutX="106.0" layoutY="276.0" text="Lieu_garage" />
+      <Label layoutX="343.0" layoutY="344.0" />
+      <Rectangle fx:id="img1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="108.0" layoutX="510.0" layoutY="253.0" stroke="BLACK" strokeType="INSIDE" width="109.0" />
+      <TextField fx:id="tfrecherche" layoutX="13.0" layoutY="358.0" prefHeight="31.0" prefWidth="358.0" promptText="Rechercher..." style="-fx-background-radius: 50;" />
+      <Button fx:id="tfqr" layoutX="56.0" layoutY="23.0" mnemonicParsing="false" onAction="#QrCode" text="Qrcode" />
+   </children>
+</AnchorPane>

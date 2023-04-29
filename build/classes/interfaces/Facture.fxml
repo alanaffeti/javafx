@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="interfaces.FactureController">
+   <children>
+      <TextField fx:id="tfarticle" layoutX="63.0" layoutY="73.0" prefHeight="25.0" prefWidth="206.0" promptText="nom_article" />
+      <TextField fx:id="tfprix2" layoutX="63.0" layoutY="175.0" prefHeight="25.0" prefWidth="206.0" promptText="prix_avec_tva" />
+      <TextField fx:id="tfprix1" layoutX="63.0" layoutY="127.0" prefHeight="25.0" prefWidth="206.0" promptText="prix_sans_tva" />
+      <TextField fx:id="tftotal" layoutX="63.0" layoutY="251.0" prefHeight="25.0" prefWidth="206.0" promptText="total" />
+      <TextField fx:id="tfquantite" layoutX="326.0" layoutY="73.0" prefHeight="25.0" prefWidth="206.0" promptText="quantite" />
+      <TextArea fx:id="tfdesc" layoutX="329.0" layoutY="139.0" prefHeight="200.0" prefWidth="200.0" promptText="Description de la piece" />
+      <Button fx:id="btnvalide" layoutX="617.0" layoutY="438.0" mnemonicParsing="false" onAction="#valid" text="Envoyer" />
+   </children>
+</AnchorPane>

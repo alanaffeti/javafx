@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="interfaces.AccidentController">
+    
+   <children>
+      <TextField fx:id="tfnom" layoutX="262.0" layoutY="69.0" prefHeight="25.0" prefWidth="206.0" promptText="Nom_client" />
+      <TextField fx:id="tfprenom" layoutX="262.0" layoutY="116.0" prefHeight="25.0" prefWidth="206.0" promptText="Prenom_client" />
+      <TextField fx:id="tfmatricule" layoutX="262.0" layoutY="157.0" prefHeight="25.0" prefWidth="206.0" promptText="Matricule_voiture" />
+      <TextField fx:id="tfimage1" layoutX="107.0" layoutY="226.0" prefHeight="25.0" prefWidth="206.0" promptText="Image_voiture_accidente" />
+      <TextField fx:id="tfimage2" layoutX="107.0" layoutY="269.0" prefHeight="25.0" prefWidth="206.0" promptText="Image_voiture_reparee" />
+      <TextField fx:id="tfimage3" layoutX="107.0" layoutY="308.0" prefHeight="25.0" prefWidth="206.0" promptText="Image_pieces_endommages" />
+      <TextField fx:id="tfimage4" layoutX="107.0" layoutY="355.0" prefHeight="25.0" prefWidth="206.0" promptText="Image_nouveaux_pieces" />
+      <TextField fx:id="tfimage5" layoutX="107.0" layoutY="392.0" prefHeight="25.0" prefWidth="206.0" promptText="image_facture_reparation" />
+      <Button fx:id="btnimport1" layoutX="328.0" layoutY="226.0" mnemonicParsing="false" onAction="#impo1" text="importer" />
+      <Button fx:id="btnimport2" layoutX="328.0" layoutY="269.0" mnemonicParsing="false" onAction="#impo2" text="importer" />
+      <Button fx:id="btnimport3" layoutX="328.0" layoutY="308.0" mnemonicParsing="false" onAction="#impo3" text="importer" />
+      <Button fx:id="btnimport4" layoutX="328.0" layoutY="355.0" mnemonicParsing="false" onAction="#impo4" text="importer" />
+      <Button fx:id="btnimport5" layoutX="328.0" layoutY="392.0" mnemonicParsing="false" onAction="#impo5" text="importer" />
+      <Button fx:id="btnvalide" layoutX="607.0" layoutY="428.0" mnemonicParsing="false" onAction="#valid" text="Envoyer" />
+      <Label layoutX="204.0" layoutY="73.0" text="Nom" />
+      <Label layoutX="204.0" layoutY="120.0" text="Prenom" />
+      <Label layoutX="158.0" layoutY="161.0" text="Matricule_voiture" />
+      <Label layoutX="60.0" layoutY="230.0" text="Image1" />
+      <Label layoutX="60.0" layoutY="273.0" text="image2" />
+      <Label layoutX="60.0" layoutY="312.0" text="image3" />
+      <Label layoutX="60.0" layoutY="359.0" text="image4" />
+      <Label layoutX="60.0" layoutY="396.0" text="image5" />
+   </children>
+
+
+
+
+
+
+</AnchorPane>
